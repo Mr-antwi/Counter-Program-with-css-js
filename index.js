@@ -1,137 +1,118 @@
+// RANDOM NUMBER GENERATOR
 
-// variables : A container that stores data values
+/* const btn = document.getElementById("btn");
 
-/* let fullName = "Ransford Antwi";
+const label1 = document.getElementById("label1");
 
-let age = 25;
+const label2 = document.getElementById("label2");
 
-let isStudent = false;
+const label3 = document.getElementById("label3");
 
-document.getElementById('para').textContent = `My name is ${fullName}`;
+let min = 1;
 
-document.getElementById('p2').textContent = `I am ${age} years old`;
+let max = 6;
 
-document.getElementById('p3').textContent = `SAre you a student? ${isStudent}`; */
+let random1 ;
+let random2 ;
+let random3 ;
 
+btn.onclick = function () {
+    random1 = Math.floor(Math.random() * max) + min;
+    random2 = Math.floor(Math.random() * max) + min;    
+    random3 = Math.floor(Math.random() * max) + min;
 
-//let students = 30;
+    label1.textContent = random1;
 
-//students += 2
-
-//students **= 2
-
-//console.log(students);
-
-/* let results = 1 + 3 - 4 * 3 / 4 **3;
-
-console.log(results) */
-
-// Howe to accept user input 
-
-/* let userName ;
-
-userName = window.prompt("What is your username"); */
-
-
-/* let userName;
-
-document.getElementById('sub').onclick = function(){
-    userName = document.getElementById('user').value;
-    document.getElementById('myH1').textContent = `Hello ${userName}`;
-    document.getElementById('myH1').style.color = "red";
-    console.log(userName);
+    label2.textContent = random2;
+    label3.textContent = random3;
 } */
 
-    /* let age = window.prompt("How old are you?");
-     
-    age = Number(age);
 
-    age += 2;
+    // if statement
 
-    console.log(age, typeof age); */
+    /* let age = 15;
 
-    // create a program that calculates the circumference of a circle
-/* 
-    const PI = 3.14;
+    let hasVotersId = false;
 
-    let radius;
+    if(age >= 18){
+        console.log("You can vote");
+        if(hasVotersId == true){
+            console.log("You can vote in the elections");
+        }
+        else{
+            console.log("You cannot vote in the elections, you need a voters ID");
+        }
+    }
 
-    let circumference;
-
-    radius = window.prompt("Enter the radius of the circle");
-
-    radius = Number(radius);
-
-    circumference = 2 * PI * radius;
-
-    console.log(`The circumference of the circle is ${circumference}`); */
-
-    // create a program that calculates the area of a circle
-
-/*     let PI = 3.14;
-    let radius;
-    let area;
-
-    radius = window.prompt("Enter the radius of the circle");
-    radius = Number(radius);
-    area = PI * radius ** 2;
-    console.log(`The area of the circle is ${area}`); */
-
-/* 
-    document.getElementById('btn').onclick = function (){
-        let PI = 3.14;
-        let radius;
-        let area;
-
-        radius = document.getElementById('radius').value;
-        radius = Number(radius);
-        area = PI * radius ** 2;
-        console.log(`The area of the circle is ${area}`);
-        document.getElementById('result').textContent = `The area of the circle is ${area}`;
-        document.getElementById('result').style.color = "blue";
+    else{
+        console.log("You cannot vote");
     } */
 
+        //A PROGRAM T0 CALCULATE THE PERIMETER OF A RECTANGLE
 
-        // create a program that calculates the potential energy of an object
+        /* let length;
 
-/* 
-        const gravity = 9.8;
-        let mass;
-        let height;
-        let potentialEnergy;
+        let width;
 
-        document.getElementById('btn').onclick = function (){
+        let perimeter;
+
+        document.getElementById('calculate').onclick = function () {
+            length = document.getElementById('length').value;
+            length = Number(length);
+
+            width = document.getElementById('width').value;
+            width = Number(width);
+
+            perimeter = 2 * length + 2 * width;
+            console.log(perimeter);
+
+            document.getElementById('output').textContent = `The perimeter of the rectangle is ${perimeter}`;
+
+            document.getElementById('output').style.color = "green";
+        }
+
+ */
+
+        /* let mass;
+        let velocity;
+        let kineticEnergy;
+
+        document.getElementById('calculate').onclick = function () {
             mass = document.getElementById('mass').value;
             mass = Number(mass);
-            height = document.getElementById('height').value;
-            height = Number(height);
 
-            potentialEnergy = mass * gravity * height;
+            velocity = document.getElementById('velocity').value;
+            velocity = Number(velocity);
 
-            console.log(`The potential energy of the object is ${potentialEnergy}`);
-            document.getElementById('output').textContent = `The potential energy of the object is ${potentialEnergy} Joules`;
+            kineticEnergy = 1/2 * mass * velocity**2
+
+            console.log(kineticEnergy);
+            document.getElementById('output').textContent = `The kinetic energy is ${kineticEnergy} Joules`;
             document.getElementById('output').style.color = "gray";
         } */
 
-            const decreaseBtn = document.getElementById('decreaseBtn');
-            const increaseBtn = document.getElementById('increaseBtn');
-            const resetBtn = document.getElementById('resetBtn');
-            const counterLabel = document.getElementById('counterLabel');
+            // Counter Program
+
+            const counterLabel = document.getElementById("counterLabel");
+            const incrementBtn = document.getElementById("incrementBtn");
+            const decrementBtn = document.getElementById("decrementBtn");
+            const resetBtn = document.getElementById("resetBtn");
             let counter = 0;
 
-            increaseBtn.onclick = function(){
+            incrementBtn.onclick = function () {
                 counter ++;
                 counterLabel.textContent = counter;
+                counterLabel.style.color = "green";
             }
 
-            decreaseBtn.onclick = function(){
+            decrementBtn.onclick = function () {
                 counter --;
                 counterLabel.textContent = counter;
                 counterLabel.style.color = "red";
             }
 
-            resetBtn.onclick = function(){
+            resetBtn.onclick = function () {
                 counter = 0;
                 counterLabel.textContent = counter;
-                counterLabel.style.color = "white";
+                counterLabel.style.color = "gray";
             }
