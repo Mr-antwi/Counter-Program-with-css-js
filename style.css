@@ -6,6 +6,7 @@ body{
     color: #fff;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /* #btn{
@@ -54,4 +55,40 @@ button{
 button:hover{
     background-color: #074851;
     transform: scale(1.003);
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    button{
+        display: block;
+        margin-top: 20px;
+        font-size: 0.8em;
+        padding: 10px 20px;
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    button{
+        display: block;
+        margin-top: 20px;
+        font-size: 1.2em;
+        padding: 10px 15px;
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 900px) {
+    
+    button{
+        display: block;
+        margin-top: 20px;
+        font-size: 1.4em;
+        padding: 15px 15px;
+        width: 80%;
+        margin: 20px auto;
+    }
 }
