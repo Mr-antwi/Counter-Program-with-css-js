@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Nana Akua Aryee</title>
 </head>
 <body>
-    
-   <div class="container">
-    <h1>Counter Program</h1>
-
-    <label id="counterLabel" class="countLab">0</label> <br><br><br>
-    <button id="incrementBtn">Increment</button>
-    <button id="decrementBtn">Decrement</button>
-    <button id="resetBtn">Reset</button>
-   </div>
-
-
-<script src = "index.js"></script>
+ <div class="container">
+    <h1>Temperature Conversion :</h1>
+    <input type="number" id="textInput" value="0">
+    <br><br>
+    <input type="radio" id="toFahrenheit" name="unit">
+    <label for="toFahrenheit">Celsius ➡️ Fahrenheit</label>
+    <br><br>
+    <input type="radio" id="toCelsius" name="unit">
+    <label for="toCelsius">Fahrenheit ➡️ Celsius</label>
+    <br><br>
+    <button onclick="tempConvert()">Submit</button>
+    <p id="output"></p>
+ </div>
+  <script src="index.js"></script>
 </body>
 </html>

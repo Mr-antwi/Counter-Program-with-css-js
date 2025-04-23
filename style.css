@@ -1,94 +1,41 @@
-body{
-    background-color: #000000;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-/* #btn{
-    background-color: #074851;
-    color: #fff;
-    font-size: 3em;
-    padding: 5px 20px;
-    text-transform: uppercase;
-}
-
-.labels{
-    font-size: 2em;
-    color: #fff;
-    margin-top: 20px;
-} */
-
-
 .container{
-    border: 2px solid grey;
+    width: 40%;
+    margin: 40px auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 2;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 10px;
-    padding: 40px 30px;
-    background-color: darkslategray;
-    width: 60%;
-    margin: auto;
-    transform: translateY(50px);
-    text-shadow: 2px 2px 4px #000000;
-    box-shadow: 4px 4px 10px #059a9c, -4px -4px 10px #059a9c;
+    }
+
+.container h1{
+    font-size: 35px;
+    color: rgb(59, 43, 38);
 }
 
-.countLab{
-    font-size: 5em;
+.container input[type="number"]{
+    padding: 8px;
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
 }
 
-button{
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 2em;
+.container label{
+    font-size: 1.5em;
+}
+
+.container button{
+    padding: 10px 35px;
+    font-size: 1.5em;
+    border-radius: 10px;
     border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #000000;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    background-color: rgb(83, 136, 181) ;
+    color: #fff;
 }
 
-button:hover{
-    background-color: #074851;
-    transform: scale(1.003);
-}
-
-
-@media screen and (max-width: 600px) {
-    
-    button{
-        display: block;
-        margin-top: 20px;
-        font-size: 0.8em;
-        padding: 10px 20px;
-        width: 80%;
-        margin: 20px auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    
-    button{
-        display: block;
-        margin-top: 20px;
-        font-size: 1.2em;
-        padding: 10px 15px;
-        width: 80%;
-        margin: 20px auto;
-    }
-}
-@media screen and (max-width: 900px) {
-    
-    button{
-        display: block;
-        margin-top: 20px;
-        font-size: 1.4em;
-        padding: 15px 15px;
-        width: 80%;
-        margin: 20px auto;
-    }
+p{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(56, 83, 56);
 }
