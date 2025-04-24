@@ -1,24 +1,18 @@
-const textInput = document.getElementById('textInput');
-const toFahrenheit = document.getElementById('toFahrenheit');
-const toCelsius = document.getElementById('toCelsius');
-const output = document.getElementById('output');
+function rollDice() {
+    const diceInput = document.getElementById('diceInput').value;
+    const rollResults = document.getElementById('rollResults');
+    const rollImages = document.getElementById('rollImages');
 
-let temp;
+    const values = [];
+    const images = [];
 
-function tempConvert() {
-    if(toFahrenheit.checked){
-        temp = Number(textInput.value);
-        temp = (temp * 9 / 5) + 32;
-        output.textContent = temp.toFixed(2) + "°F";
+    for(let i = 0; i < diceInput; i++){
+        const value = Math.floor(Math.random() * 6 ) + 1;
+
+        values.push(value);
+        images.push(`<img src = "dice_images/${value}.png">`)
     }
 
-    else if(toCelsius.checked){
-        temp = Number(textInput.value);
-        temp = (temp - 32) * 9 / 5
-        output.textContent = temp.toFixed(2) + "°C";
-    }
-
-    else{
-        output.textContent = "Select a unit"
-    }
+    rollResults.textContent = `dice: ${values.join(' , ')}`;
+    rollImages.innerHTML = images.join('');
 }
